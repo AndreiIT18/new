@@ -1,0 +1,42 @@
+number1 = int(input('Введите первое число: '))
+number2 = int(input('Введите второе число: '))
+
+
+
+def sum(number1,number2):
+    result = number1 + number2
+    return result
+def subtract(number1,number2):
+    result = number1 - number2
+    return result
+def multiplay(number1,number2):
+    result = number1 * number2
+    return result
+def divide(number1,number2):
+    result = number1 / number2
+    return result
+
+message = '''
+Пожалуйста, введите символ операции, которую вы хотите совершить и нажмите Enter:​
+ 
++ : Сложение
+- : Вычитание
+/ : Деление
+* : Умножение
+ 
+Ваш выбор:
+'''
+operation = input(message)
+if operation == '+':
+   print('Сложение')
+elif operation == '-':
+   print('Вычитание')
+elif operation == '/':
+   print('Деление')
+elif operation == '*':
+   print('Умножение')
+else:
+   print('Неизвестная операция') 
+   
+
+  
