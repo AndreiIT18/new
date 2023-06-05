@@ -1,0 +1,10 @@
+from prettytable import PrettyTable
+
+name = input('Введите имя: ')
+grade = int(input('Ввидите цифру класса: '))
+age = int(input('Ввидите возраст: '))
+
+my_table = PrettyTable()
+my_table.field_names = ["№", "Имя", "Класс", "Возраст"]
+my_table.add_row([1, name, grade, age])
+print(my_table)
